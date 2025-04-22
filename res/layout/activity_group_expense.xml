@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fragment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+    <EditText
+        android:id="@+id/inputDesc"
+        android:hint="Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/inputCost"
+            android:hint="Cost"
+            android:inputType="numberDecimal"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+        <Button
+            android:id="@+id/ocrbt"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Add Image of Bill"
+
+            android:layout_toRightOf="@+id/inputCost"
+            android:layout_marginLeft="13dp"
+            android:backgroundTint="#FF6D00"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/splittext"
+            android:text="Split by: "
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/splittext"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paid by: "
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"
+            android:id="@+id/paidby"
+            android:layout_toRightOf="@+id/splittext"
+            android:layout_marginLeft="120dp"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/paidby"/>
+
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/buttonAddExpense"
+        android:text="Add Expense"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FF6D00"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/listViewExpenses"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"/>
+<!--            android:layout_above="@+id/back"/>-->
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Back"-->
+<!--            android:backgroundTint="#FF6D00"-->
+<!--            android:id="@+id/back"-->
+<!--            android:layout_alignParentBottom="true"/>-->
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

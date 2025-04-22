@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SignupActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username: "
+            android:textSize="20dp"
+            android:id="@+id/usernametext"
+            android:padding="12dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Username"
+            android:textSize="20dp"
+            android:id="@+id/editusername"
+            android:layout_toRightOf="@+id/usernametext"
+            android:padding="12dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password: "
+            android:textSize="20dp"
+            android:layout_below="@+id/usernametext"
+            android:id="@+id/passwordtext"
+            android:padding="12dp"
+            />
+
+        <EditText
+            android:id="@+id/editpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editusername"
+            android:layout_toRightOf="@+id/passwordtext"
+            android:hint="Enter Password"
+            android:textSize="20dp"
+            android:padding="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email ID:    "
+            android:textSize="20dp"
+            android:layout_below="@+id/passwordtext"
+            android:id="@+id/emailtext"
+            android:padding="12dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPI ID:        "
+            android:textSize="20dp"
+            android:layout_below="@+id/emailtext"
+            android:id="@+id/upitext"
+            android:padding="12dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONE:     "
+            android:textSize="20dp"
+            android:layout_below="@+id/upitext"
+            android:id="@+id/phonetext"
+            android:padding="12dp"
+            />
+        <EditText
+            android:id="@+id/editemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editpassword"
+            android:layout_toRightOf="@+id/emailtext"
+            android:hint="Enter Email ID"
+            android:textSize="20dp"
+            android:padding="12dp"/>
+        <EditText
+            android:id="@+id/editupi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editemail"
+            android:layout_toRightOf="@+id/upitext"
+            android:hint="Enter UPI ID"
+            android:textSize="20dp"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/editphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editupi"
+            android:layout_toRightOf="@+id/phonetext"
+            android:hint="Enter phone no"
+            android:textSize="20dp"
+            android:padding="12dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+        <Button
+            android:backgroundTint="#FF6D00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/register"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="80dp"/>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input fields -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/descInput"
+            android:hint="Description"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv2"
+            android:layout_toRightOf="@+id/descInput"
+            android:text="Category:"
+            android:layout_marginTop="15dp"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_category"
+            android:layout_toRightOf="@+id/tv2"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/costInput"
+        android:hint="Cost"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <DatePicker
+        android:id="@+id/datepicker"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:scrollbarSize="20dp" />
+
+    <!-- Add Expense button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/addExpenseButton"
+            android:text="Add Expense"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF6D00"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnanalyze"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#FF6D00"
+            android:text="Analyze"
+            android:textSize="10dp"
+
+            android:layout_toRightOf="@+id/addExpenseButton"/>
+
+    </RelativeLayout>
+
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/listViewExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

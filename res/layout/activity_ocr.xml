@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="16dp">
+    <!--  Button to trigger OCR  -->
+    <!--  TextView to display extracted text  -->
+    <Button
+        android:id="@+id/select_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:backgroundTint="#FF6D00"/>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp" />
+    <Button android:id="@+id/button_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Extract Text from Image"
+        android:backgroundTint="#FF6D00"/>
+    <TextView android:id="@+id/text_output" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Extracted text will appear here" android:padding="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ocroutput"/>
+</LinearLayout>
